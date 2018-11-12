@@ -1,5 +1,7 @@
 # Personal Website
 
+[![Build Status](https://travis-ci.org/9at8/personal-website.png?branch=master)](https://travis-ci.org/9at8/personal-website)
+
 This project uses [razzle](https://github.com/jaredpalmer/razzle), and the docs below are heavily inspired from that.
 
 ## Quick Start
