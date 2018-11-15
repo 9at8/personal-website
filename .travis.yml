@@ -1,11 +1,19 @@
 language: node_js
 node_js:
-  - 'stable'
+  - stable
 cache:
+  yarn: true
   directories:
     - node_modules
+env:
+  - PORT=58080
+install:
+  - yarn
 script:
-  - npm test
-  - npm run build
-on:
-  branch: master
+  - yarn test
+  - yarn build
+deploy:
+  provider: script
+  script: bash ./config/deploy/csc.sh
+  on:
+    branch: master
