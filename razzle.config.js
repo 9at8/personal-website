@@ -19,6 +19,13 @@ module.exports = {
       },
     }
 
+    const sassLoader = {
+      loader: require.resolve('sass-loader'),
+      options: {
+        sourceMap: dev,
+      },
+    }
+
     const postCssLoader = {
       loader: require.resolve('postcss-loader'),
       options: {
@@ -40,6 +47,7 @@ module.exports = {
           ? require.resolve('style-loader')
           : MiniCssExtractPlugin.loader,
         typingsCssLoader,
+        sassLoader,
         postCssLoader,
       ],
     }

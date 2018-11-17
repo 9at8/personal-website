@@ -31,6 +31,7 @@ const SSR = express().get(
           <meta charSet='utf-8' />
           <title>Aditya Thakral</title>
           <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
           ${
             assets.client.css
               ? `<link rel="stylesheet" href="${assets.client.css}">`

@@ -28,4 +28,9 @@ export default express()
     }
     console.log(`> Started on port ${port}`)
   })
+
+if (process.env.NODE_ENV === 'production') {
+  console.log(__dirname)
+}
+
 /* tslint:enable:no-console */
