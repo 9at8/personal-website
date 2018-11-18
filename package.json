@@ -39,7 +39,7 @@
     "prettier-tslint": "0.4.0",
     "razzle": "2.4.0",
     "razzle-plugin-typescript": "2.4.0",
-    "react": "16.6.1",
+    "react": "16.6.3",
     "react-dom": "16.6.3",
     "react-router-dom": "4.3.1",
     "sass-loader": "^7.1.0",
