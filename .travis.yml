@@ -11,10 +11,3 @@ install:
   - yarn
 script:
   - yarn test
-  - yarn build
-deploy:
-  provider: script
-  script: bash ./config/deploy/csc.sh
-  skip_cleanup: true
-  on:
-    branch: master

@@ -12,6 +12,15 @@
     "**/node_modules": true,
     "build": true
   },
+  "files.watcherExclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "build": true,
+    "src/**/*.d.ts": true
+  },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "search.exclude": {
