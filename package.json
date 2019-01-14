@@ -40,7 +40,7 @@
     "razzle": "2.4.0",
     "razzle-plugin-typescript": "2.4.0",
     "react": "16.6.3",
-    "react-dom": "16.6.3",
+    "react-dom": "16.7.0",
     "react-router-dom": "4.3.1",
     "sass-loader": "^7.1.0",
     "style-loader": "0.23.1",
