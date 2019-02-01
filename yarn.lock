@@ -8732,10 +8732,10 @@ razzle-dev-utils@^2.4.1:
     sockjs-client "1.1.4"
     strip-ansi "3.0.1"
 
-razzle-plugin-typescript@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/razzle-plugin-typescript/-/razzle-plugin-typescript-2.4.0.tgz#07c090b4ceb961e6684176563a940935e60399b5"
-  integrity sha1-B8CQtM65YeZoQXZWOpQJNeYDmbU=
+razzle-plugin-typescript@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/razzle-plugin-typescript/-/razzle-plugin-typescript-2.4.1.tgz#18781bc3b52e74cfc21f0039defca2017a303958"
+  integrity sha512-rS38rUUgcqX/Fbq6WXIJPdp1JHk4lACfIKNtP/BKzmcOeDpZMYOyvu/DT9fv2jN9ZlC1E8f/eXxm9VCEfRQlLA==
   dependencies:
     fork-ts-checker-webpack-plugin "^0.4.1"
     ts-loader "^4.2.0"
