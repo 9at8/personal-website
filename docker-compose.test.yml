@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  web:
+    environment:
+      - CI=true
+      - NODE_ENVIRONMENT=test
+    command: yarn test

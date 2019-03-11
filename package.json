@@ -6,7 +6,11 @@
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start:prod": "NODE_ENV=production node build/server.js"
+    "start:prod": "NODE_ENV=production node build/server.js",
+    "app:start": "docker-compose -f docker-compose.dev.yml up --build",
+    "app:build": "docker-compose -f docker-compose.yml build",
+    "app:test": "docker-compose -f docker-compose.yml -f docker-compose.test.yml up",
+    "app:start:prod": "docker-compose -f docker-compose.yml up"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.13",
