@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   web:
-    image: personal-website
+    image: 9at8/personal-website
     build:
       context: .
       dockerfile: Dockerfile
