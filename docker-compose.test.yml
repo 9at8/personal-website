@@ -1,6 +1,14 @@
 version: '3.7'
 services:
   web:
+    image: 9at8/personal-website-test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PORT=3000
+    ports:
+      - '3000:3000'
     environment:
       - CI=true
       - NODE_ENVIRONMENT=test
