@@ -8455,12 +8455,13 @@ razzle-dev-utils@^2.4.1:
     sockjs-client "1.1.4"
     strip-ansi "3.0.1"
 
-razzle-plugin-typescript@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/razzle-plugin-typescript/-/razzle-plugin-typescript-2.4.1.tgz#18781bc3b52e74cfc21f0039defca2017a303958"
+razzle-plugin-typescript@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/razzle-plugin-typescript/-/razzle-plugin-typescript-3.0.0.tgz#fe162686d17c321d29d1507d6413e2d9e68ed043"
+  integrity sha512-cQbbpex31WpHBzXPfJ79QnhEB0oR2PUMnyuQuJKE2J0zjq43tmVx4PyK6ZTINFK6xysl3geduW7t4jYi7c4wgQ==
   dependencies:
     fork-ts-checker-webpack-plugin "^0.4.1"
-    ts-loader "^4.2.0"
+    ts-loader "^5.2.1"
 
 razzle@2.4.1:
   version "2.4.1"
@@ -10283,9 +10284,10 @@ ts-jest@24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-ts-loader@^4.2.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-4.5.0.tgz#a1ce70b2dc799941fb2197605f0d67874097859b"
+ts-loader@^5.2.1:
+  version "5.4.5"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-5.4.5.tgz#a0c1f034b017a9344cef0961bfd97cc192492b8b"
+  integrity sha512-XYsjfnRQCBum9AMRZpk2rTYSVpdZBpZK+kDh0TeT3kxmQNBDVIeUjdPjY5RZry4eIAb8XHc4gYSUiUWPYvzSRw==
   dependencies:
     chalk "^2.3.0"
     enhanced-resolve "^4.0.0"

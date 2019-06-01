@@ -42,7 +42,7 @@
     "prettier-stylelint": "0.4.2",
     "prettier-tslint": "0.4.2",
     "razzle": "2.4.1",
-    "razzle-plugin-typescript": "2.4.1",
+    "razzle-plugin-typescript": "3.0.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-router-dom": "4.3.1",
