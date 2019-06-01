@@ -8226,11 +8226,7 @@ prettier-tslint@0.4.2:
     tslint "^5.9.1"
     yargs "^11.0.0"
 
-prettier@1.16.1:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.1.tgz#534c2c9d7853f8845e5e078384e71973bd74089f"
-
-prettier@^1.7.0:
+prettier@1.17.1, prettier@^1.7.0:
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.1.tgz#ed64b4e93e370cb8a25b9ef7fef3e4fd1c0995db"
 
