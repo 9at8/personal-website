@@ -18,7 +18,11 @@ function Home() {
       </h1>
       <p>Software developer, Beat Saber ninja</p>
       <p className={styles.links}>
-        <LinkIcon to="https://github.com/9at8" icon={faGithub} noOpener={true} />
+        <LinkIcon
+          to="https://github.com/9at8"
+          icon={faGithub}
+          noOpener={true}
+        />
         <LinkIcon
           to="https://www.linkedin.com/in/99at8"
           icon={faLinkedin}

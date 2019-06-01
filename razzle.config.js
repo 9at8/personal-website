@@ -2,20 +2,29 @@
 
 const autoprefixer = require('autoprefixer')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const ExtractCssChunks = require('extract-css-chunks-webpack-plugin')
 
 module.exports = {
   plugins: ['typescript'],
   modify(config, {target, dev}) {
     const typingsCssLoader = {
-      loader: require.resolve('typings-for-css-modules-loader'),
+      loader: require.resolve('dts-css-modules-loader'),
       options: {
         modules: true,
         sass: true,
         namedExport: true,
+      },
+    }
+
+    const cssLoader = {
+      loader: require.resolve('css-loader'),
+      options: {
+        modules: true,
         sourceMap: dev,
         localIdentName: dev
           ? '[name]__[local]-[hash:base64:5]'
           : '[hash:base64:6]',
+        exportOnlyLocals: true,
       },
     }
 
@@ -45,10 +54,11 @@ module.exports = {
       use: [
         target === 'web' && dev
           ? require.resolve('style-loader')
-          : MiniCssExtractPlugin.loader,
+          : ExtractCssChunks.loader,
         typingsCssLoader,
-        sassLoader,
+        cssLoader,
         postCssLoader,
+        sassLoader,
       ],
     }
 
@@ -57,7 +67,7 @@ module.exports = {
 
       plugins: [
         ...config.plugins,
-        new MiniCssExtractPlugin({
+        new ExtractCssChunks({
           filename: '[name].css',
           chunkFilename: '[id].css',
         }),
