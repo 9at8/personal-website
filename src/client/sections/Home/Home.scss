@@ -1,36 +1,24 @@
-$accent: #2196f3;
-
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 1rem;
-  text-align: center;
-}
 
-.imageCrop {
-  width: 200px;
-  height: 200px;
-  margin: 5rem 0;
-  overflow: hidden;
-  border-radius: 50%;
-
-  .image {
-    width: 220px;
-    margin: -10px 0;
+  .imageGallery {
+    width: 100%;
+    height: 100vw;
   }
 }
 
-.name {
-  font-size: 48pt;
-  font-weight: normal;
+// tablets
+@media only screen and (min-width: 600px) {
+  .home {
+    height: 100vh;
+    flex-direction: row;
+    align-items: initial;
 
-  .nickName {
-    color: $accent;
-    font-weight: bold;
+    .imageGallery {
+      height: 100vh;
+      flex: 30%;
+    }
   }
-}
-
-.links {
-  display: flex;
 }
