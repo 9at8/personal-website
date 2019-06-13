@@ -23,7 +23,7 @@
     "@types/webpack-env": "1.13.9",
     "autoprefixer": "9.5.1",
     "css-loader": "1.0.1",
-    "enzyme": "^3.9.0",
+    "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.13.2",
     "express": "4.17.1",
     "identity-obj-proxy": "^3.0.0",
