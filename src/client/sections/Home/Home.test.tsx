@@ -1,53 +1,60 @@
-import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import {faEnvelope, faFile} from '@fortawesome/free-solid-svg-icons'
-import {shallow} from 'enzyme'
+import {mount} from 'enzyme'
 import * as React from 'react'
 
-import {LinkIcon} from './components'
+import {Highlight} from 'components'
+
 import Home from './Home'
 
 describe('<Home />', () => {
   it('renders my name', () => {
-    const wrapper = shallow(<Home />)
+    const wrapper = mount(<Home />)
 
-    expect(wrapper.text()).toContain('Aditya Thakral')
+    expect(wrapper.text()).toContain('Adi')
   })
 
   describe('links', () => {
-    it('renders github link icon', () => {
-      const wrapper = shallow(<Home />)
-      const githubLinkIcon = wrapper.find(LinkIcon).filter({icon: faGithub})
+    it('renders github link', () => {
+      const wrapper = mount(<Home />)
+      const githubLink = wrapper
+        .find(Highlight)
+        .filterWhere(highlight => highlight.text() === 'GitHub')
 
-      expect(githubLinkIcon).toExist()
-      expect(githubLinkIcon).toHaveProp('to', 'https://github.com/9at8')
+      expect(githubLink).toExist()
+      expect(githubLink).toHaveProp('link', 'https://github.com/9at8')
     })
 
-    it('renders linkedin link icon', () => {
-      const wrapper = shallow(<Home />)
-      const linkedinLinkIcon = wrapper.find(LinkIcon).filter({icon: faLinkedin})
+    it('renders linkedin link', () => {
+      const wrapper = mount(<Home />)
+      const linkedinLink = wrapper
+        .find(Highlight)
+        .filterWhere(highlight => highlight.text() === 'LinkedIn')
 
-      expect(linkedinLinkIcon).toExist()
-      expect(linkedinLinkIcon).toHaveProp(
-        'to',
+      expect(linkedinLink).toExist()
+      expect(linkedinLink).toHaveProp(
+        'link',
         'https://www.linkedin.com/in/99at8',
       )
     })
 
-    it('renders resume link icon', () => {
-      const wrapper = shallow(<Home />)
-      const resumeLinkIcon = wrapper.find(LinkIcon).filter({icon: faFile})
+    it('renders resume link', () => {
+      const wrapper = mount(<Home />)
+      const resumeLinkIcon = wrapper
+        .find(Highlight)
+        .filterWhere(highlight => highlight.text() === 'Resume')
 
       expect(resumeLinkIcon).toExist()
-      expect(resumeLinkIcon).toHaveProp('to', '/resume.pdf')
+      expect(resumeLinkIcon).toHaveProp('link', '/resume.pdf')
     })
 
-    it('renders email link icon', () => {
-      const wrapper = shallow(<Home />)
-      const emailLinkIcon = wrapper.find(LinkIcon).filter({icon: faEnvelope})
+    it('renders email link', () => {
+      const wrapper = mount(<Home />)
+      const emailLink = wrapper
+        .find(Highlight)
+        .filterWhere(highlight => highlight.text() === 'email')
 
-      expect(emailLinkIcon).toExist()
-      expect(emailLinkIcon).toHaveProp(
-        'to',
+      expect(emailLink).toExist()
+      expect(emailLink).toHaveProp(
+        'link',
         'mailto:aditya.thakral@edu.uwaterloo.ca',
       )
     })

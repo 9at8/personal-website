@@ -1,0 +1,19 @@
+$orange: #ffe0b2;
+$blue: #bbdefb;
+
+%highlight {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.orange {
+  @extend %highlight;
+
+  background-color: $orange;
+}
+
+.blue {
+  @extend %highlight;
+
+  background-color: $blue;
+}

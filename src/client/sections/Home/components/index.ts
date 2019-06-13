@@ -1,1 +1,1 @@
-export {default as LinkIcon} from './LinkIcon'
+export {default as ImageGallery} from './ImageGallery'

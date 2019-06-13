@@ -1,5 +1,7 @@
 'use strict'
 
+const path = require('path')
+
 const autoprefixer = require('autoprefixer')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin')
@@ -64,6 +66,15 @@ module.exports = {
 
     return {
       ...config,
+
+      resolve: {
+        ...config.resolve,
+        alias: {
+          ...config.resolve.alias,
+
+          components: path.resolve(__dirname, 'src/client/components/'),
+        },
+      },
 
       plugins: [
         ...config.plugins,

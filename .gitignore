@@ -62,3 +62,5 @@ src/**/*.d.ts
 
 # Build files
 build/
+
+.DS_Store

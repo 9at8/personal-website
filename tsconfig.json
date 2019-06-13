@@ -24,7 +24,11 @@
     "suppressImplicitAnyIndexErrors": true,
     "importHelpers": true,
     "removeComments": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "components": ["src/client/components/"]
+    }
   },
   "exclude": [
     "node_modules",
