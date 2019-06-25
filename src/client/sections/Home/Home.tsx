@@ -40,10 +40,8 @@ function Home() {
           </p>
           <p>
             You can shoot me an{' '}
-            <Highlight link="mailto:aditya.thakral@edu.uwaterloo.ca">
-              email
-            </Highlight>
-            , checkout my{' '}
+            <Highlight link="mailto:contact@9at8.dev">email</Highlight>,
+            checkout my{' '}
             <Highlight link="https://github.com/9at8">GitHub</Highlight>,{' '}
             <Highlight link="https://www.linkedin.com/in/99at8">
               LinkedIn
