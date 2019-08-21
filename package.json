@@ -51,7 +51,7 @@
     "tslint-config-prettier": "1.18.0",
     "tslint-react": "4.0.0",
     "typescript": "3.5.3",
-    "webpack-bundle-analyzer": "^3.3.2"
+    "webpack-bundle-analyzer": "^3.4.1"
   },
   "jest": {
     "transform": {
