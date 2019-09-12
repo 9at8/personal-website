@@ -21,9 +21,7 @@ function Home() {
         <section>
           <p>
             I’m a junior at the <Highlight>University of Waterloo</Highlight>,
-            studying <Highlight>computer science</Highlight>. Currently I'm in{' '}
-            <Highlight>Austin</Highlight>, working at{' '}
-            <Highlight link="https://data.world">data.world</Highlight>.
+            studying <Highlight>computer science</Highlight>.
           </p>
           <p>
             I love working with functional programming languages. 👨‍💻 I have had
