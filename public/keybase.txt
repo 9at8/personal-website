@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/9at8
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://9at8.dev
+  * I am 9at8 (https://keybase.io/9at8) on keybase.
+  * I have a public key ASAqEtWhGzpzrSqnPMl5-yPwWvbIXOE4E4Qmolfi00DWtAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120aadb23c16fefe1ab07b569c42f8b30c4aba0499e919022a2b03cf6f609f730fd0a",
+      "host": "keybase.io",
+      "kid": "01202a12d5a11b3a73ad2aa73cc979fb23f05af6c85ce138138426a257e2d340d6b40a",
+      "uid": "eedde827a75ab32ce7fe7f7e039dba19",
+      "username": "9at8"
+    },
+    "merkle_root": {
+      "ctime": 1569814031,
+      "hash": "59ccc60852c6a0733ca91a6261bdf968e96efff0f421d852ddf76088047b82183f4e9ea7ce1c87093553a8155652b80d29177ebc9b4f3badbdca6deca84490e2",
+      "hash_meta": "543d7cfe3ef5f588438873b91cbbdb4be0c245fdced638f2618c3ae775722e89",
+      "seqno": 7803683
+    },
+    "service": {
+      "entropy": "FH5EYUHd5RSZLldTfWCN+UWa",
+      "hostname": "9at8.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.5.0"
+  },
+  "ctime": 1569814189,
+  "expire_in": 504576000,
+  "prev": "2e406aa9bd2d0f8471a4e986bed682996baf2acdc6962d9b9829071a51b71c65",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgKhLVoRs6c60qpzzJefsj8Fr2yFzhOBOEJqJX4tNA1rQKp3BheWxvYWTESpcCC8QgLkBqqb0tD4RxpOmGvtaCmWuvKs3Gli2bmCkHGlG3HGXEIDX9REhm9KWtttgKHdm66BdQAU3y4n/Xo0r34ycl/FdpAgHCo3NpZ8RAiDn3ZpO7t5XmIVYOvC0qcWKC6Ikl+jRKy4qxhYenq5MB0josCP7wIkJebkiKOFl5//YPGg3uBoSJWfbPcVO1C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIY48/vWqQXJmh7zxJudWvYsNhCLugLGyMxloZqXtWPWo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/9at8
+
+==================================================================
