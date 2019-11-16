@@ -47,11 +47,11 @@ export default function ImageGallery({images}: Props) {
         <Image key={image.src} {...image} hidden={visibleIdx !== idx} />
       ))}
       <div className={styles.control}>
-        <button className={styles.left} onClick={onLeftClick}>
-          Left
+        <button className={styles.controlButton} onClick={onLeftClick}>
+          <div className={styles.controlIcon}>{'<'}</div>
         </button>
-        <button className={styles.right} onClick={onRightClick}>
-          Right
+        <button className={styles.controlButton} onClick={onRightClick}>
+          <div className={styles.controlIcon}>{'>'}</div>
         </button>
       </div>
     </div>

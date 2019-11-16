@@ -68,22 +68,34 @@
   display: flex;
   width: 100%;
   z-index: 15;
+  justify-content: space-between;
 }
 
-%button {
-  opacity: 0;
+.controlButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  flex-basis: 25%;
+  margin: 0;
+  padding: 0;
+  background: 0;
+  border: 0;
+  outline: 0;
 }
 
-.left {
-  @extend %button;
-
-  flex-grow: 1;
-}
-
-.right {
-  @extend %button;
-
-  flex-grow: 1;
+.controlIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  outline: 0;
 }
 
 @keyframes fadeIn {
