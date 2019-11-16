@@ -2,16 +2,14 @@ import * as React from 'react'
 
 import {Frame, Highlight} from 'components'
 
-import {ImageGallery} from './components'
-
 import * as styles from './Home.scss'
-import me from './me.jpg'
+import {MyPictures} from './MyPictures'
 
 function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.imageGallery}>
-        <ImageGallery images={[{src: me, alt: 'Picture of Aditya Thakral'}]} />
+        <MyPictures />
       </div>
       <Frame>
         <header>

@@ -2,27 +2,58 @@ import * as React from 'react'
 
 import * as styles from './ImageGallery.scss'
 
-interface Image {
+export type ImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
   src: string
-  alt: string
+  alt: string,
 }
 
-interface Props {
-  images: Image[]
-}
-
-export default function ImageGallery({images}: Props) {
-  const image = images[0]
-
+function Image(props: ImageProps) {
+  const {hidden, ...image} = props
   return (
-    <figure className={styles.imageGallery}>
+    <figure>
       <div
         style={{backgroundImage: `url(${image.src})`}}
-        className={styles.backgroundImage}
+        className={
+          hidden ? styles.hiddenBackgroundImage : styles.visibleBackgroundImage
+        }
       />
-      <img {...image} className={styles.image} />
+      <img
+        {...image}
+        decoding={hidden ? 'async' : 'sync'}
+        className={hidden ? styles.hiddenImage : styles.visibleImage}
+      />
     </figure>
   )
 }
 
-export {Image, Props}
+// https://stackoverflow.com/questions/14271865/how-does-javascript-handle-modulo
+function mod(n: number, p: number) {
+  const r = n % p
+  return r < 0 ? r + p : r
+}
+
+export interface Props {
+  images: ImageProps[]
+}
+
+export default function ImageGallery({images}: Props) {
+  const [visibleIdx, setVisibleIdx] = React.useState(0)
+  const onLeftClick = () => setVisibleIdx(mod(visibleIdx - 1, images.length))
+  const onRightClick = () => setVisibleIdx(mod(visibleIdx + 1, images.length))
+
+  return (
+    <div className={styles.imageGallery}>
+      {images.map((image, idx) => (
+        <Image key={image.src} {...image} hidden={visibleIdx !== idx} />
+      ))}
+      <div className={styles.control}>
+        <button className={styles.controlButton} onClick={onLeftClick}>
+          <div className={styles.controlIcon}>{'<'}</div>
+        </button>
+        <button className={styles.controlButton} onClick={onRightClick}>
+          <div className={styles.controlIcon}>{'>'}</div>
+        </button>
+      </div>
+    </div>
+  )
+}
