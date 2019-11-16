@@ -31,7 +31,7 @@ jobs:
       run: yarn
 
     - name: Build
-      run: yarn buid
+      run: yarn build
     
     - name: Test
       run: yarn test
