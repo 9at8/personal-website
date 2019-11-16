@@ -1,0 +1,41 @@
+name: Build and Test
+
+on: [push]
+
+jobs:
+
+# Ideally build and test should be two concurrent jobs that run in parallel
+# but I could not figure out a good way to persist data between jobs.
+# I tried upload-artifact, but that takes too long.
+# So, sticking to sequenctial for now.
+  build_and_test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+        
+    - uses: actions/cache@v1
+      id: node_modules
+      with:
+        path: node_modules
+        key: ${{ matrix.node-version }}-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+        
+    - name: Install dependencies
+      run: yarn
+
+    - name: Build
+      run: yarn build
+    
+    - name: Test
+      run: yarn test
+  
+env:
+  CI: true
+  NODE_ENV: PRODUCTION
