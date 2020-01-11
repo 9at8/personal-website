@@ -34,14 +34,14 @@ const SSR = express().get(
 
           <title>Aditya Thakral</title>
 
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+          <link rel="manifest" href="site.webmanifest" />
           <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
           ${
             assets.client.css
-              ? `<link rel="stylesheet" href="${assets.client.css}" />`
+              ? `<link rel="stylesheet" href="${assets.client.css.slice(1)}" />`
               : ''
           }
         </head>
@@ -49,7 +49,7 @@ const SSR = express().get(
           <div id="root">${markup}</div>
           ${
             process.env.NODE_ENV === 'production'
-              ? `<script src="${assets.client.js}" defer></script>`
+              ? `<script src="${assets.client.js.slice(1)}" defer></script>`
               : `<script src="${assets.client.js}" defer crossorigin></script>`
           }
         </body>
