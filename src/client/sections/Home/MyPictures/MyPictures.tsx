@@ -27,7 +27,10 @@ const pictures = [
 export function MyPictures() {
   return (
     <ImageGallery
-      images={pictures.map(src => ({src, alt: 'Picture of Aditya Thakral'}))}
+      images={pictures.map(src => ({
+        src: process.env.NODE_ENV === 'production' ? src.slice(1) : src,
+        alt: 'Picture of Aditya Thakral',
+      }))}
     />
   )
 }
