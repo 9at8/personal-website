@@ -40,7 +40,7 @@ describe('<Home />', () => {
       const wrapper = mount(<Home />)
       const resumeLinkIcon = wrapper
         .find(Highlight)
-        .filterWhere(highlight => highlight.text() === 'Resume')
+        .filterWhere(highlight => highlight.text() === 'resume')
 
       expect(resumeLinkIcon).toExist()
       expect(resumeLinkIcon).toHaveProp('link', '/resume.pdf')
