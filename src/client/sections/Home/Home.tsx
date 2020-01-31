@@ -14,42 +14,92 @@ function Home() {
       <Frame>
         <header>
           <h1>Hey 👋, I'm Adi.</h1>
-          <h3>My full name is Aditya Thakral, but everyone calls me Adi 🤷‍♂️</h3>
+          <h3>
+            My first name is Aditya, but everyone calls me Adi because it's
+            easier 🤷‍♂️
+          </h3>
         </header>
         <section>
           <p>
-            I’m a junior at the <Highlight>University of Waterloo</Highlight>,
+            I’m a senior at the <Highlight>University of Waterloo</Highlight>,
             studying <Highlight>computer science</Highlight>.
           </p>
           <p>
-            I love working with functional programming languages. 👨‍💻 I have had
-            some experience here and there with Scheme, Standard ML, and
-            Haskell.
+            I love working with TypeScript. So much that I helped move{' '}
+            <Highlight link="https://data.world">data.world</Highlight> from
+            Flow to TypeScript. I contributed to an{' '}
+            <Highlight link="https://github.com/datadotworld/ts-migration">
+              open source script
+            </Highlight>{' '}
+            that performs successfully performed the conversion on their 300k
+            LOC web app.
           </p>
           <p>
-            When I’m not writing code, I love binging{' '}
+            I have a strong interest in working with functional programming
+            languages. 👨‍💻 For my compilers class this term, I am building a{' '}
+            <Highlight>compiler</Highlight> for Java in Scala.
+          </p>
+          <p>
+            When I’m not writing code, I am either binging{' '}
             <Highlight link="https://www.tvtime.com/en/user/10452553/profile">
               TV Shows
             </Highlight>
-            , watching movies, and most importantly, playing{' '}
-            <Highlight link="http://beatsaber.com/">Beat Saber</Highlight>.
+            , watching movies, or playing{' '}
+            <Highlight link="https://beatsaber.com/">Beat Saber</Highlight> or{' '}
+            <Highlight link="https://fitxr.com/">Box VR</Highlight>.
           </p>
           <p>
-            You can shoot me an{' '}
-            <Highlight link="mailto:contact@9at8.dev">email</Highlight>,
-            checkout my{' '}
-            <Highlight link="https://github.com/9at8">GitHub</Highlight>,{' '}
+            You can get in touch with me using{' '}
+            <Highlight link="mailto:hello@9at8.dev">email</Highlight>, checkout
+            some of my projects on{' '}
+            <Highlight link="https://github.com/9at8">GitHub</Highlight>,
+            connect with me on{' '}
             <Highlight link="https://www.linkedin.com/in/99at8">
               LinkedIn
             </Highlight>
-            , or <Highlight link="/resume.pdf">Resume</Highlight>.
+            , read more on my <Highlight link="/resume.pdf">resume</Highlight>.
           </p>
-          <p>Heads up, I ❤️ emojis and gifs!</p>
         </section>
         <section>
           <header>
             <h3>Some recent ... adventure(s)?</h3>
           </header>
+          <article>
+            <header>
+              <p>
+                <b>
+                  Owning your data (
+                  <Highlight link="https://homeserver.9at8.dev">
+                    homeserver
+                  </Highlight>
+                  )
+                </b>
+                <br />
+                <time dateTime="2020-01-31">January 31, 2020</time>
+              </p>
+            </header>
+            <p>
+              Recently, I started exploring{' '}
+              <Highlight link="https://nextcloud.com">Nextcloud</Highlight>.
+              Nextcloud is a self hosted platform that lets you send email,
+              backup contacts, pictures, and do a lot more with a homeserver. It
+              lets you share files like Google Drive, sync your calendar, and so
+              much more. All of this can be done right inside your home, on a
+              server that you are not going to use for anything else. The
+              benefit? You own your data.
+            </p>
+            <p>
+              So far, I'm testing the waters - testing out the reliability of
+              the android client, linux file sync client, and a lot more
+              features. So far it is going great. I think I can see myself
+              running my own instance of nextcloud on the cloud.
+            </p>
+            <p>
+              If you would like to try it out, send me an{' '}
+              <Highlight link="mailto:hello@9at8.dev">email</Highlight>. I can
+              give you access, and we can schedule something to chat about it!
+            </p>
+          </article>
           <article>
             <header>
               <p>
