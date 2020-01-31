@@ -53,7 +53,7 @@ describe('<Home />', () => {
         .filterWhere(highlight => highlight.text() === 'email')
 
       expect(emailLink).toExist()
-      expect(emailLink).toHaveProp('link', 'mailto:contact@9at8.dev')
+      expect(emailLink).toHaveProp('link', 'mailto:hello@9at8.dev')
     })
   })
 })
