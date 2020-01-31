@@ -95,9 +95,10 @@ function Home() {
               running my own instance of nextcloud on the cloud.
             </p>
             <p>
-              If you would like to try it out, send me an{' '}
-              <Highlight link="mailto:hello@9at8.dev">email</Highlight>. I can
-              give you access, and we can schedule something to chat about it!
+              If you would like to try it out, send me an email at{' '}
+              <Highlight link="mailto:hello@9at8.dev">hello@9at8.dev</Highlight>
+              . I can give you access, and we can schedule something to chat
+              about it!
             </p>
           </article>
           <article>
