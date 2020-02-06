@@ -57,7 +57,7 @@ function Home() {
             <Highlight link="https://www.linkedin.com/in/99at8">
               LinkedIn
             </Highlight>
-            , read more on my <Highlight link="/resume.pdf">resume</Highlight>.
+            , read more on my <Highlight link="resume.pdf">resume</Highlight>.
           </p>
         </section>
         <section>
