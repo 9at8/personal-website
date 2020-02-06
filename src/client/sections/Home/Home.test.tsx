@@ -43,7 +43,7 @@ describe('<Home />', () => {
         .filterWhere(highlight => highlight.text() === 'resume')
 
       expect(resumeLinkIcon).toExist()
-      expect(resumeLinkIcon).toHaveProp('link', '/resume.pdf')
+      expect(resumeLinkIcon).toHaveProp('link', 'resume.pdf')
     })
 
     it('renders email link', () => {
