@@ -31,8 +31,7 @@ function Home() {
             <Highlight link="https://github.com/datadotworld/ts-migration">
               open source script
             </Highlight>{' '}
-            that performs successfully performed the conversion on their 300k
-            LOC web app.
+            that successfully performed the conversion on their 300k LOC web app.
           </p>
           <p>
             I have a strong interest in working with functional programming
